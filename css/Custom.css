@@ -1,0 +1,149 @@
+
+.center{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header{
+  font-family:'Courier New', Courier, monospace
+}
+
+body{
+  background-color: #cff6fc;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+td {
+  padding-bottom: 10px;
+}
+
+.pepper-paragraph{
+  text-align: center;
+}
+
+p {
+  font-size:large;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+}
+
+#list{
+  font-size: x-large;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button {
+  background: cadetblue;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  padding: 7px;
+  font-family: monospace;
+  border: solid black;
+  width: max-content;
+}
+
+.button:hover{
+  background:#64babd;
+  color:white;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#image {
+  height: 25%;
+  width: 25%;
+}
+
+.index-btn {
+  text-align: right;
+  margin-right: 40px;
+}
+
+.complicated-flexbox{
+  display: flex;
+  background: salmon;
+  flex-direction: row;
+  float: right;
+  width: 50%;
+}
+
+.nested-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.friends-and-family{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction:column;
+  align-items: center;
+}
+.inner-flexbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.flex-item{
+  padding: 10px;
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 25%;
+  width: 25%;
+}
+
+.nav-bar-link{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-bar-link:hover{
+  color: #d9d9d9;
+}
+
+.nav-bar {
+  display: flex;
+  background: #757575;
+  justify-content: space-evenly;
+}
+
+.index-pic{
+  display: flex;
+  justify-content: center;
+}
+
+.index-pic-size{
+  height: 400px;
+}
+
+#rotateImage {
+  width: 20%;
+}
+
+@media screen and (max-width: 900px){
+  .index-pic-size {width: 200px; height: 200px;}
+}
+
+@media screen and (max-width: 500px){
+  .friends-and-family {flex-direction:column;align-items: center;}
+  #list {font-size:medium;}
+  .index-btn {margin-bottom: 30px;}
+  .nav-bar {flex-direction:column;align-items:center;}
+}

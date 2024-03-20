@@ -1,0 +1,159 @@
+.headshot{
+  max-width: 500px;
+  max-height: 500px;
+}
+
+.body-large{
+  display: flex;
+}
+
+.intro-head{
+  font-size: xx-large;
+  margin-left: 20%;
+}
+
+.intro-body{
+  width: 50%;
+  margin-left: 10%;
+}
+
+.body-small{
+  display: none;
+  flex-direction: column;
+}
+
+.body-small-header{
+  display: flex;
+  align-items: center;
+}
+
+.hide-fed-details{
+  display: none;
+}
+
+.show-molex-details{
+  display:block;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.hide-molex-details{
+  display: none;
+}
+
+.show-rv-details{
+  display:block;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.hide-rv-details{
+  display: none;
+}
+
+.show-fed-details{
+  display:block;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.basic-info{
+  display:block;
+}
+
+#align-titles{
+  margin-left:5%;
+}
+
+.logos{
+  max-width: 200px;
+  max-height: 200px;
+  margin-top: 3%;
+  margin-left: 5%;
+}
+
+.logos:hover{
+  max-width: 250px;
+  max-height:250px;
+  cursor: pointer;
+}
+
+.personal{
+  max-width: 300px;
+  max-height: 300px;
+}
+
+.info-row{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around
+}
+
+.pic-info-text{
+  margin-left:2%;
+  max-width: 50%;
+}
+
+#molex{
+  max-width: 150px;
+}
+
+#molex:hover{
+  max-width:200px;
+  max-height: 200px;
+  cursor: pointer;
+}
+
+.large-professionexperience{
+  display: flex;
+  flex-direction: row;
+  margin-left: 4%;
+  margin-right: 4%;
+  margin-top: 3%;
+  justify-content: center;
+}
+
+.tech-skills{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 1%;
+}
+
+.tech-skills-titles{
+  font-size: large;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info{
+  text-align: center;
+}
+
+.about-me-title{
+  text-align: center;
+  font-size: large;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+@media screen and (max-width: 600px){
+  .headshot{max-width: 200px; max-height: 200px;margin-left:5%;margin-top:6%;}
+  .body-large{display: none;}
+  .body-small{display:flex;}
+  .intro-head{margin-left:8%;margin-top: 4%;}
+  .intro-body{width: 90%;
+    margin-left: 5%;
+    margin-top: 3%;}
+    .info-row{flex-direction: column;}
+  .pic-info-text{margin-bottom: 1%}
+  .personal{margin-bottom: 1%;}
+}
+
+@media screen and (max-width: 500px){
+  .large-professionexperience{flex-direction: column;}
+  .basic-info{ display: flex;
+    align-items: center;
+    flex-direction: column;}
+}

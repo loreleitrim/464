@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <link rel="stylesheet" type="text/css" href="css/Custom.css">
+  <body>
+    <div class="nav-bar">
+      <div><a class="nav-bar-link" href="Index.html">Home</a> </div>
+      <div><a class="nav-bar-link" href="Background.html">About me</a></div>
+    </div>
+    <div class="index-pic">
+      <img class="index-pic-size" src="images/Pepper2.jpg" alt="pepper">
+    </div>
+    <p class="pepper-paragraph">This is my dog Pepper</p>
+    <div class="center">
+      
+      <form>
+        <table>
+          <tr>
+            <td><label for="formPractice">Why does she have one eye?</label></td>
+              <td>
+                <select id="guesses" name="pepper">
+                <option value="wrong">Select one</option>
+                <option value="wrong">Lost a fight</option>
+                <option value="wrong">Born this way</option>
+                <option value="correct">Got sat on by a bigger dog</option>
+                <option value="wrong">Accidentally scratched it out</option>
+              </select>
+            </td>
+          <!-- <tr>
+            <td>A text box :)</td>
+            <td><input type="text" size="10"></td>
+          </tr>
+          <tr>
+            <td><input type="radio" id="this" name="this" value="This"/>
+            <label for="this">This</label></td>
+            <td><input type="radio" id="that" name="this" value="That"/>
+            <label for="that">That</label></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="checkbox" id="checked"/>
+            <label for="checked">Checked?</label></td>
+          </tr>
+          <tr>
+            <td><textarea name="message" rows="6" cols="20"></textarea></td>
+          </tr> -->
+          <tr>
+            <td><input type="submit" id="pepperForm" value="Submit"></button></td>
+            <td><input type="reset" id="reset" value="Reset"></td>
+          </tr>
+          <!-- <tr>
+            <td class="output"></td>
+          </tr> -->
+      </table>
+      </form>
+      <p class="output"></p>
+    </div>
+  </body>
+</html>
+
+<script>
+  const guessSubmit = document.getElementById('pepperForm');
+  const guessField = document.getElementById('guesses');
+  const guessReset = document.getElementById('reset');
+  const output = document.querySelector('.output');
+  guessSubmit.addEventListener('click', checkGuess);
+  guessReset.addEventListener('click', function() {
+  output.textContent = "";
+  guessSubmit.disabled = false;
+  });
+  function checkGuess(){
+    const userGuess = guessField.value;
+    if (userGuess == 'wrong'){
+      output.textContent = "Nope try again :/";
+    } else {
+      output.textContent = "haha yeah she's not very smart, but she's cute so it's alright :)";
+    }
+    guessSubmit.disabled = true;
+}
+</script>
