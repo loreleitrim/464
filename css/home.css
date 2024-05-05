@@ -9,12 +9,19 @@
 
 .intro-head{
   font-size: xx-large;
-  margin-left: 20%;
+  margin-left: 10%;
 }
 
 .intro-body{
+  font-size: x-large;
   width: 50%;
   margin-left: 10%;
+}
+
+.intro{
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
 }
 
 .body-small{
@@ -35,6 +42,7 @@
   display:block;
   margin-left: 5%;
   margin-top: 5%;
+  font-size: large;
 }
 
 .hide-molex-details{
@@ -45,6 +53,7 @@
   display:block;
   margin-left: 5%;
   margin-top: 5%;
+  font-size: large;
 }
 
 .hide-rv-details{
@@ -55,25 +64,27 @@
   display:block;
   margin-left: 5%;
   margin-top: 5%;
+  font-size: large;
 }
 
 .basic-info{
   display:block;
+  margin-left:5%;
 }
 
 #align-titles{
   margin-left:5%;
+  font-size:large;
 }
 
 .logos{
-  max-width: 200px;
   max-height: 200px;
   margin-top: 3%;
   margin-left: 5%;
 }
 
 .logos:hover{
-  max-width: 250px;
+  max-width: 480px;
   max-height:250px;
   cursor: pointer;
 }
@@ -96,12 +107,14 @@
 }
 
 #molex{
-  max-width: 150px;
+  max-width:450px;
+}
+
+#rv{
+  max-width: 430px;
 }
 
 #molex:hover{
-  max-width:200px;
-  max-height: 200px;
   cursor: pointer;
 }
 
@@ -127,8 +140,12 @@
   flex-direction: column;
 }
 
-.contact-info{
-  text-align: center;
+.unmc-img{
+  width: 200px;
+}
+
+.contact-body{
+  font-size: large;
 }
 
 .about-me-title{
@@ -136,6 +153,54 @@
   font-size: large;
   margin-top: 1%;
   margin-bottom: 1%;
+}
+
+.unmc-image-col{
+  display: flex;
+  flex-direction: column;
+}
+
+.unmc-desc{
+  margin-left: 5%;
+  width: 65%;
+}
+
+.unmc{
+  font-size: large;
+  display: flex;
+  align-items: center;
+  margin-left: 10%;
+}
+
+.college-intro{
+  font-size: xx-large;
+  margin-left: 35%;
+  width: max-content
+}
+
+.about-intro{
+  font-size: xx-large;
+  margin-left: 110%;
+  width: max-content
+}
+
+.message{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: large;
+}
+
+.message-space{
+  margin: 4%;
+}
+
+.time {
+  position: relative;
+  bottom: 120%;
+  float: right;
+  right: 10%;
+  font-size: xx-large;
 }
 
 @media screen and (max-width: 600px){
@@ -149,6 +214,7 @@
     .info-row{flex-direction: column;}
   .pic-info-text{margin-bottom: 1%}
   .personal{margin-bottom: 1%;}
+  .intro{width:0px;}
 }
 
 @media screen and (max-width: 500px){
@@ -156,4 +222,5 @@
   .basic-info{ display: flex;
     align-items: center;
     flex-direction: column;}
+  .unmc{flex-direction: column;}
 }

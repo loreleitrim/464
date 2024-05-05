@@ -1,13 +1,27 @@
-.bar{
+.bar-links{
   display:flex;
   flex-direction: row;
   justify-content: flex-end;
-  background-color: #67b061;
   font-size: large;
+}
+
+.bar{
+  background-color: #9cc4cd;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
 }
 
 body{
   margin: 0px;
+  background-color: rgb(233,233,233);
+}
+
+.home-svg{
+  width: 3%;
+  margin-left:2%;
 }
 
 .nav-element{
@@ -15,7 +29,7 @@ body{
 }
 
 .nav-carat{
-  background-color: #67b061;
+  background-color: #9cc4cd;
 }
 
 a{
